@@ -1,0 +1,420 @@
+#brand-logo{ /*Logo on the navbar*/
+	max-width: 40px;
+	margin-top: -7px;
+	display: inline-block;
+}
+
+html, body {
+	height: 100%;
+}
+
+body {
+  position: relative;
+}
+
+/*Home Panel*/
+/******************************************/
+.jumbotron {
+	/*background-color: #003B58;*/
+	background-image: url('../assets/bridge.jpg');
+	background-size: 100% 100%; /*fit image to jumbotron exactly*/
+	min-height: 700px;
+}
+
+.title{
+	font-family: 'Oswald', sans-serif;
+	display: inline;
+}
+
+.tag-line{
+	font-family: 'Roboto', sans-serif;
+	font-style: italic;
+	margin-top: -20px;
+	color: #033656;
+}
+
+.home{
+	/*home panel font color*/
+	color: #006AAB;
+	display: none;
+	margin-top: 125px;
+}
+
+#home-logo{ /*logo on the home panel*/
+	height: 100px;
+	background-color: white;
+	border: 2px solid #009DA4;
+	margin-bottom: 5%;
+	margin-left: 2%;
+	text-align: center;
+	display: inline;
+}
+
+
+/*Layout functions when screen gets smaller*/
+@media screen and (max-width: 996px) {
+	#home-logo {
+		height: 70px;
+	}
+}
+
+@media screen and (max-width: 500px) {
+	.home {
+		padding-top: 10px;
+	}
+	.jumbotron { 
+		min-height: 600px;
+	}
+	.tag-line {
+		margin-top: 130px; /*bring tag-line below the bridge*/
+	}
+}
+
+@media screen and (max-width: 991px) {
+	#services .col-md-3{
+		margin-top: 5%;
+	}
+}
+
+
+
+
+
+/******************************************/
+
+
+
+/*Services*/
+/******************************************/
+#services p{
+	font-family: 'Slabo', sans-serif;
+	font-size: 115%;
+}
+
+.service-desc {
+	font-style: italic;
+	font-size: 110% !important;
+}
+/******************************************/
+
+
+
+
+/*About Us*/
+/******************************************/
+#about{
+	background-image: url('../assets/human_resources.jpg');
+	background-size: cover;
+}
+
+#about h2{
+	color: white;
+}
+
+#about h3{
+	color: #03AACC; /*light blue*/
+}
+
+.company-profile{
+	font-size: 150%;
+	margin: auto;
+	width: 70%;
+	/*background-color: #00365F;*/
+	color: white;
+	padding: 2%;
+	border-radius: 10px;
+}
+
+.mission-vision{
+	margin: auto;
+	width: 70%;
+	/*background-color: #00365F;*/
+	color: white;
+	padding: 2%;
+	border-radius: 10px;
+	font-family: 'Slabo', sans-serif;
+	font-size: 125%;
+}
+
+.mission-vision h4{
+	font-size: 1.5em;
+}
+
+/*Appropriate margins between logos and text when resizing*/
+@media screen and (min-width: 993px) and (max-width: 1150px){
+	.mission-vision #vision{
+		margin-left: 20px;
+	}
+	.mission-vision #mission {
+		margin-left: 20px;
+	}
+}
+/******************************************/
+
+
+
+
+
+
+/*team photo decor*/
+#img-box-liza{
+	background-image: url('../assets/liza_id.jpg');
+	background-size: cover;
+	width: 200px;
+	height: 250px;
+	border: 3px solid #00365F;
+}
+#img-box-mingmitr{
+	background-image: url('../assets/mingmitr.jpg');
+	background-size: cover;
+	width: 200px;
+	height: 250px;
+	border: 3px solid #00365F;
+}
+#img-box-nathan{
+	background-image: url('../assets/nathan.jpg');
+	background-size: cover;
+	width: 200px;
+	height: 250px;
+	border: 3px solid #00365F;
+}
+#img-box-chakrit{
+	background-image: url('../assets/chakrit.jpg');
+	background-size: cover;
+	width: 200px;
+	height: 250px;
+	border: 3px solid #00365F;
+}
+
+
+/*.img-decor{
+	border: 3px solid #00365F; darkblue = #00365F lightblue = #03AACC grey: #858585
+	max-height: 300px;
+	max-width: 250px;
+	height: auto;
+	width: auto;
+	display: block;
+}*/
+
+
+.img-responsive{
+	margin: 0 auto;
+}
+
+
+/*Contact*/
+/******************************************/
+#contact{
+	color: #00C5CD;
+}
+
+#contact p {
+	font-size: 1.5em;
+	color: white;
+	font-family: 'Montserrat', sans-serif;
+}
+
+.email{
+	color: #00C5CD;
+	transition: color 0.2s ease-in-out 0s; /*effect delay on hover*/
+}
+
+.email:hover{
+	color: #929190;
+}
+
+.email:active{
+	color: #00C5CD;
+}
+
+.email:visited{
+	color: #00C5CD;
+}
+
+.contact-links{
+	font-size: 1.5em;
+	width: 50%;
+	margin: auto;
+}
+
+
+
+/******************************************/
+
+
+
+/*Footer*/
+/******************************************/
+.footer{
+	font-size: 0.9em;
+	font-weight: bold;
+}
+
+
+/******************************************/
+
+
+/*Headings*/
+/******************************************/
+.section-heading{
+	font-weight: bold;
+	font-family: 'Montserrat', sans-serif;
+}
+
+.section-subheading{
+	font-style: italic;
+}
+
+/******************************************/
+
+
+/*icon colors*/
+/**********************/
+.lightblue-shell{
+	color: #169CCF;
+}
+
+.darkblue-shell{
+	color: #00365F; /*darker blue*/
+}
+
+.yellow-shell{
+	color:#FCB314;
+}
+
+/**********************/
+
+/*padding tools*/
+
+.top-buffer {
+	margin-top: 5%;
+}
+
+.top-buffer-1pc {
+	margin-top: 1%;
+}
+
+.bottom-buffer{
+	margin-bottom: 5%;
+}
+
+.bottom-buffer-10px{
+	margin-bottom: 10px;
+}
+
+.bottom-buffer-20px{
+	margin-bottom: 20px;
+}
+
+.bottom-padding{
+	padding-bottom: 5%;
+}
+
+.right-buffer-20px{
+	margin-right: 20px;
+}
+
+
+/*Background Colors*/
+/**********************/
+.lightblue{
+	background-color: #169CCF;
+}
+
+.darkblue{
+	background-color: #00365F;
+}
+
+.panel{
+	padding-top: 5%;
+	padding-bottom: 5%;
+	box-shadow: none;
+	-webkit-box-shadow: none;
+}
+/**********************/
+
+/*Font tools*/
+.oswald{
+	font-family: 'Oswald', sans-serif;
+}
+
+.montserrat{
+	font-family: 'Montserrat', sans-serif;
+}
+
+
+
+/*TWBS navbar*/
+.navbar-default {
+  background-color: #ffffff;
+  border-color: #00256f;
+}
+.navbar-default .navbar-brand {
+  color: #727272;
+}
+.navbar-default .navbar-brand:hover, .navbar-default .navbar-brand:focus {
+  color: #0083ff;
+}
+.navbar-default .navbar-text {
+  color: #727272;
+}
+.navbar-default .navbar-nav > li > a {
+  color: #727272;
+}
+.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
+  color: #0083ff;
+}
+.navbar-default .navbar-nav > li > .dropdown-menu {
+  background-color: #ffffff;
+}
+.navbar-default .navbar-nav > li > .dropdown-menu > li > a {
+  color: #727272;
+}
+.navbar-default .navbar-nav > li > .dropdown-menu > li > a:hover,
+.navbar-default .navbar-nav > li > .dropdown-menu > li > a:focus {
+  color: #0083ff;
+  background-color: #00256f;
+}
+.navbar-default .navbar-nav > li > .dropdown-menu > li > .divider {
+  background-color: #ffffff;
+}
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
+  color: #0083ff;
+  background-color: #00256f;
+}
+.navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus {
+  color: #0083ff;
+  background-color: #00256f;
+}
+.navbar-default .navbar-toggle {
+  border-color: #00256f;
+}
+.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
+  background-color: #00256f;
+}
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: #727272;
+}
+.navbar-default .navbar-collapse,
+.navbar-default .navbar-form {
+  border-color: #727272;
+}
+.navbar-default .navbar-link {
+  color: #727272;
+}
+.navbar-default .navbar-link:hover {
+  color: #0083ff;
+}
+
+@media (max-width: 767px) {
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a {
+    color: #727272;
+  }
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover, .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
+    color: #0083ff;
+  }
+  .navbar-default .navbar-nav .open .dropdown-menu > .active > a, .navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover, .navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus {
+    color: #0083ff;
+    background-color: #00256f;
+  }
+}
