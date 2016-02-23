@@ -26,8 +26,15 @@ body {
 	display: inline;
 }
 
+.slogan {
+	color: #e50000;
+	font-style: italic;
+	font-family: 'Montserrat', sans-serif;
+	margin-top: 0px;
+}
+
 .tag-line{
-	font-family: 'Roboto', sans-serif;
+	font-family: 'Slabo', sans-serif;
 	font-style: italic;
 	margin-top: -20px;
 	color: #033656;
@@ -58,21 +65,29 @@ body {
 	}
 }
 
-@media screen and (max-width: 500px) {
+/*mobile phone screen size*/
+@media screen and (max-width: 600px) {
 	.home {
 		padding-top: 10px;
 	}
 	.jumbotron { 
 		min-height: 600px;
 	}
+	.slogan {
+		font-size: 90%;
+	}
 	.tag-line {
 		margin-top: 130px; /*bring tag-line below the bridge*/
+		font-size: 25px;
 	}
 }
 
-@media screen and (max-width: 991px) {
+@media screen and (min-width: 768px) and (max-width: 991px) {
 	#services .col-md-3{
 		margin-top: 5%;
+	}
+	.tag-line {
+		margin-top: 100px;
 	}
 }
 
@@ -102,6 +117,16 @@ body {
 
 /*About Us*/
 /******************************************/
+.overlay{
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 1;
+	height: 100%;
+	width: 100%;
+	background-color: rgba(0,0,0, 0.35);
+}
+
 #about{
 	background-image: url('../assets/human_resources.jpg');
 	background-size: cover;
@@ -214,7 +239,7 @@ body {
 	font-family: 'Montserrat', sans-serif;
 }
 
-.email{
+.email {
 	color: #00C5CD;
 	transition: color 0.2s ease-in-out 0s; /*effect delay on hover*/
 }
@@ -228,6 +253,23 @@ body {
 }
 
 .email:visited{
+	color: #00C5CD;
+}
+
+.phone-number {
+	color: #00C5CD;
+	transition: color 0.2s ease-in-out 0s; /*effect delay on hover*/
+}
+
+.phone-number:hover{
+	color: #929190;
+}
+
+.phone-number:active{
+	color: #00C5CD;
+}
+
+.phone-number:visited{
 	color: #00C5CD;
 }
 

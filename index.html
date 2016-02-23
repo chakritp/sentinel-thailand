@@ -69,8 +69,10 @@
 		<header>
 			<div class="jumbotron text-center" id="home">
 				<div class="container home">
+					<h3 class="slogan">Your partner in customer service excellence</h3>
 					<h1 class="title">Welcome to Sentinel Thailand</h1>
 					<img src="assets/logo.png" alt="home-logo" class="img-responsive img-circle" id="home-logo"/>
+					
 					<h2 class="tag-line">"Bridging the gap"</h3>
 				</div>
 			</div>
@@ -97,12 +99,6 @@
 					</span>
 					<h4>HR Consultancy</h4>
 					<p>We set up hotel HR pre-opening, staff re-structuring, industrial relations and other services.</p>
-					<button class="btn btn-info" role="button" data-toggle="collapse" href="#service1">See More</button>
-					<div class="row collapse top-buffer-1pc" id="service1">
-						<div class="col-xs-offset-2 col-xs-8 well text-center">
-							<p class="service-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
-						</div>
-					</div>
 				</div>
 				<div class="col-md-3">
 					<span class="fa-stack fa-4x">
@@ -111,12 +107,6 @@
 					</span>
 					<h4>Training and Development</h4>
 					<p> We develop and implement customized customer service programs and other competency/enhancement programs for your employees.</p>
-					<button class="btn btn-info" role="button" data-toggle="collapse" href="#service2">See More</button>
-					<div class="row collapse top-buffer-1pc" id="service2">
-						<div class="col-xs-offset-2 col-xs-8 well">
-							<p class="service-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
-						</div>
-					</div>
 				</div>
 				<div class="col-md-3">
 					<span class="fa-stack fa-4x">
@@ -124,13 +114,7 @@
 						<i class="fa fa-users fa-stack-1x fa-inverse"></i>
 					</span>
 					<h4>Outsourcing for hotels</h4>
-					<p>We provide skilled line staff such as housekeeping attendants, FB attendants and stewards.</p>
-					<button class="btn btn-info" role="button" data-toggle="collapse" href="#service3">See More</button>
-					<div class="row collapse top-buffer-1pc" id="service3">
-						<div class="col-xs-offset-2 col-xs-8 well">
-							<p class="service-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
-						</div>
-					</div>
+					<p>We provide skilled service staff such as housekeeping attendants, FB attendants and stewards.</p>
 				</div>
 				<div class="col-md-3">
 					<span class="fa-stack fa-4x">
@@ -139,20 +123,15 @@
 					</span>
 					<h4>English speaking trainees for hotels</h4>
 					<p>We offer Filipino-English speaking trainees for entry level positions.</p>
-					<button class="btn btn-info" role="button" data-toggle="collapse" href="#service4">See More</button>
-					<div class="row collapse top-buffer-1pc" id="service4">
-						<div class="col-xs-offset-2 col-xs-8 well">
-							<p class="service-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
-						</div>
-					</div>
 				</div>
 			</div>
 		</div>
 
 		<!-- About Us container -->
-		<div class="container-fluid panel lightblue" id="about">
-			
-			<div class="row">
+		<div class="container-fluid panel lightblue" id="about" style="position: relative; padding: 0;">
+			<div class="overlay">
+			</div>
+			<div class="row" style="z-index: 2; position: relative; margin: 5%">
 				<div class="col-md-12 text-center">
 					<h2 class="section-heading">ABOUT US</h2>
 					<h3 class="section-subheading bottom-padding montserrat">Who We Are</h3>
@@ -161,7 +140,7 @@
 					<div class="row">
 						<div class="col-md-12">
 							<div class="company-profile montserrat">
-								Sentinel Thailand is a duly recognized human resources solutions provider. Our company is committed in providing customer service excellence through enhancement of skills and competencies of employees.
+								Sentinel Thailand is a duly recognized human resources solutions provider. Our company is committed to providing customer service excellence through enhancement of skills and competencies of employees.
 							</div>
 						</div>
 					</div>
@@ -274,7 +253,6 @@
 							</div>
 						</div>
 					</div> 
-					<!-- end chakrit_resume -->
 				</div>
 			</div>
 		</div>
@@ -296,13 +274,15 @@
 			<div class="row contact-links">
 				<div class="col-sm-6 text-center bottom-buffer">
 					<a class="email" href="mailto:info@sentinel-thailand.com">
-					<i class="fa fa-envelope-o fa-3x"></i>
-					<div>info@sentinel-thailand.com</div>
+						<i class="fa fa-envelope-o fa-3x"></i>
+						<div>info@sentinel-thailand.com</div>
 					</a>
 				</div>
 				<div class="col-sm-6 text-center">
-					<i class="fa fa-phone fa-3x"></i>
-					<div>(+66) 890-177-964</div>
+					<a class="phone-number" href="tel:+66890177964">
+						<i class="fa fa-phone fa-3x"></i>
+						<div>(+66) 890-177-964</div>
+					</a>
 				</div>
 
 			</div>
